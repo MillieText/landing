@@ -131,10 +131,12 @@
     padding: 2%;
     border: black;
     border-radius: 10px;
+    /*position: relative;*/
 }
 
 .textbook-subblock-1{
     flex: 1;
+    /*justify-content: center;*/
 }
 
 .textbook-subblock-2{
