@@ -3,13 +3,48 @@
 	padding:0;
     box-sizing: border-box;
     list-style-type: none;
-    font-size: 17px
+    font-size: 17px;
 }
 
 /*START Landing Block*/
 
-.block-1-landing{
-    display: flex;
+.block-1-landing {
+    display: flex !important;
+    margin: auto;
+    width: 80%;
+    margin-top: 150px;
+    margin-left: 11%;
+}
+
+.block-1-landing-shadow {
+    position: relative;
+    display: inline-block;
+}
+
+.block-1-landing-shadow::before,
+.block-1-landing-shadow::after {
+    content: '';
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+.block-1-landing-shadow::before{
+    background: blue;
+    width: 100%;
+    z-index: -1 !important;
+    top: 2%;
+    left: 49%;
+    transform: translateX(-50%);
+}
+
+.block-1-landing-shadow::after {
+    background: red;
+    width: 100%;
+    z-index: -2;
+    top: 4%;
+    left: 48%;
+    transform: translateX(-50%);
 }
 
 .landing-subblock-1{
@@ -35,6 +70,44 @@
     background-color: rgba(255, 255, 255, .3);
     border-top: black;
 }*/
+
+.block-2-textbooks {
+    margin: auto;
+    width: 80%;
+    margin-top: 150px;
+    margin-left: 9%;
+}
+
+.block-2-textbooks-shadow{
+    position: relative;
+    display: inline-block;
+}
+
+.block-2-textbooks-shadow::before,
+.block-2-textbooks-shadow::after {
+    content: '';
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+.block-2-textbooks-shadow::before{
+    background: blue;
+    width: 100%;
+    z-index: -1 !important;
+    top: 2%;
+    left: 51%;
+    transform: translateX(-50%);
+}
+
+.block-2-textbooks-shadow::after {
+    background: red;
+    width: 100%;
+    z-index: -2;
+    top: 4%;
+    left: 52%;
+    transform: translateX(-50%);
+}
 
 .textbook-column{
     flex-basis: 32%;
@@ -107,6 +180,12 @@
 
 /*START Supplamental Block*/
 
+.block-3-supplamental {
+    margin: auto;
+    width: 80%;
+    margin-top: 150px;
+}
+
 .supplamental-subblock-1-4{
     display:flex;
     text-align: center;
@@ -140,15 +219,19 @@
 
 /*START Text Design Block*/
 
+.block-4-textdesign{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    margin-top: 150px;
+    margin-left: 11%;
+}
+
 .textdesign-image{
     width: 500px;
     margin: auto;
     display: block;
     justify-content: center;
-}
-
-.block-4-textdesign{
-    display:flex;
 }
 
 .textdesign-subblock-1{
@@ -163,6 +246,12 @@
 /*END Text Design Block*/
 
 /*START Platform Block*/
+
+.block-5-platform{
+    margin: auto;
+    width: 80%;
+    margin-top: 150px;
+}
 
 .platform-image{
     width: 400px;
@@ -204,8 +293,11 @@
 /*START FAQ Block*/
 
 .block-6-FAQ{
+    margin: auto;
+    width: 80%;
+    margin-top: 150px;
     text-align: center;
-/*    padding-bottom: 100px;*/
+    margin-left: 9%;
 }
 
 /*END FAQ Block*/
@@ -268,10 +360,10 @@
     color: #555555;
     background-color: white;
 
-    margin: auto;
-    margin-top: 150px;
-    /* border: 5px red solid; */
+    /* margin: auto;
     width: 80%;
+    margin-top: 150px; */
+    /* border: 5px red solid; */
     /* padding-top: 7rem; */
     padding: 5%;
     padding-left: 6%;
