@@ -3,11 +3,23 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #f5fbe9; /*light yellow*/
+    --secondary-color:#268EFF; /*dark blue*/
+    --tertiary-color: #716FDC; /*dark purple*/
+    --neutral-color: Black;
+    --secondary-supplement-color: #34bffa; /*light blue*/
+    --tertiary-supplement-color: #aaa9ea; /*light purple*/
+    --font-color-gray: lightgray;
+    --font-color-white: white;
+}
+
+
 /*******START Footer General*******/
 
 .footer {
-    background: gray;
-    color: #d3d3d3;
+    background: var(--tertiary-color);
+    color: var(--font-color-gray);
     height: 350px;
     position: relative;
     margin-top: 100px;
@@ -21,7 +33,8 @@
 
 #footer-titles {
     font-size: 1.7rem;
-    font-weight: 900;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     /* font-family: 'Lora', serif; */
 }
 
@@ -40,7 +53,7 @@
 
 .footer-socials-all img{
     display: inline-block;
-    border: 2px solid darkgray;
+    border: 2px solid var(--secondary-color);
     padding: 3px;
     width: 30px;
     padding-top: 5px;
@@ -74,7 +87,7 @@
 }
 
 .footer-links-all a{
-    color: #444;
+    color: var(--font-color-dark-gray);
     padding: .5em;
     text-decoration: none;
     line-height: 1.5rem;
@@ -88,10 +101,11 @@
     padding-bottom: 4%;
     margin-left: 10%;
     /* border: 2px solid white; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-links-all a:hover{
-    background-color: rgba(85, 69, 69, 0.7);
+    background-color: var(--tertiary-supplement-color);
 }
 
 .footer-links-all{
@@ -122,15 +136,15 @@
 .footer-contact-input,
 .footer-text-input {
     width: 90%;
-    background: #272727;
-    color: #bebdbd;
+    background: var(--tertiary-supplement-color);
+    color: var(--neutral-color);
     margin-bottom: 7px;
     padding: .7rem 1.2rem;
     border: none;
     border-radius: 3%;
     line-height: 1.5rem;
     font-size: 1.2em;
-    font-family: 'Lora', serif;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
 
 .contact-button {
@@ -140,7 +154,7 @@
     border: 1px solid transparent;
     border-radius: .25rem;
     font-size: 1.08rem;
-    font-family: 'Lora', serif;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
   
 .contact-button:hover {
@@ -148,11 +162,16 @@
     background: #005255;
 }
 
+.footer-note {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
 /*******END Footer third-right contact-us section*******/
 
 .footer-bottom{
-    background: #343a40;
-    color: #686868;
+    background: var(--tertiary-supplement-color);
+    color: var(--font-color-gray);
     height: 50px;
     width: 100%;
     text-align: center;

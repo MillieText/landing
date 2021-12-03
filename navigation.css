@@ -1,4 +1,13 @@
 
+:root {
+  --primary-color: #f5fbe9; /*light yellow*/
+  --secondary-color: dodgerblue; /*dark blue*/ /*#268EFF*/
+  --tertiary-color: #716FDC; /*dark purple*/
+  --neutral-color: Black;
+  --secondary-supplement-color: #34bffa; /*light blue*/
+  --tertiary-supplement-color: #aaa9ea; /*light purple*/
+}
+
   .luxbar-fixed {
     width: 100%;
     position: fixed;
@@ -169,8 +178,9 @@
   /******* color variables *******/
   .luxbar-menu-dark,
   .luxbar-menu-dark .dropdown ul {
-    background-color: #949090;
-    color: #fff; }
+    background-color: var(--primary-color);
+    color: var(--secondary-color); 
+    font-weight: bold;}
   
   .luxbar-menu-dark .active,
   .luxbar-menu-dark .luxbar-item:hover {

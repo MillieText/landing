@@ -6,6 +6,18 @@
     font-size: 17px;
 }
 
+:root {
+    --primary-color: #f5fbe9; /*light yellow*/
+    --secondary-color:#268EFF; /*dark blue*/
+    --tertiary-color: #716FDC; /*dark purple*/
+    --neutral-color: Black;
+    --secondary-supplement-color: #34bffa; /*light blue*/
+    --tertiary-supplement-color: #aaa9ea; /*light purple*/
+    --font-color-gray: lightgray;
+    --font-color-dark-gray: gray;
+    --font-color-white: white;
+}
+
 /*START Landing Block*/
 
 .block-1-landing {
@@ -30,7 +42,7 @@
 }
 
 .block-1-landing-shadow::before{
-    background: blue;
+    background: var(--secondary-color);
     width: 100%;
     z-index: -1 !important;
     top: 2%;
@@ -39,7 +51,7 @@
 }
 
 .block-1-landing-shadow::after {
-    background: red;
+    background: var(--tertiary-color);
     width: 100%;
     z-index: -2;
     top: 4%;
@@ -92,26 +104,25 @@ input[type=text]:focus {
 }
 
 .input-with-icon input[type=text]:focus + i {
-    color: dodgerBlue;
+    color: var(--tertiary-color);
 }
 
 .signup-button {
     margin-top: 5%;
     margin-bottom: 5%;
     border: none;
-    background: dodgerblue;
+    background: var(--tertiary-color);
     color: white;
     border-radius: 4px;
 }
 
 .landing-subblock-2{
     flex: 1;
-    border: 7px solid red;
-    padding: 3%;
+    padding-top: 20px;
 }
 
 .landing-pic{
-    width: 100%;
+    width: 80%;
     margin: auto;
     display: block;
 }
@@ -119,11 +130,6 @@ input[type=text]:focus {
 /*END Landing Block*/
 
 /*START Textbook Block*/
-
-/*.textbook-subblock-1:hover{
-    background-color: rgba(255, 255, 255, .3);
-    border-top: black;
-}*/
 
 .block-2-textbooks {
     margin: auto;
@@ -146,7 +152,7 @@ input[type=text]:focus {
 }
 
 .block-2-textbooks-shadow::before{
-    background: blue;
+    background: var(--tertiary-color);
     width: 100%;
     z-index: -1 !important;
     top: 2%;
@@ -155,54 +161,13 @@ input[type=text]:focus {
 }
 
 .block-2-textbooks-shadow::after {
-    background: red;
+    background: var(--secondary-color);
     width: 100%;
     z-index: -2;
     top: 4%;
     left: 52%;
     transform: translateX(-50%);
 }
-
-
-/* .textbook-column{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-} */
-
-/* .layer{
-    background: transparent;
-    height: 120%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-}
-
-.layer:hover{
-    background: rgba(227, 0, 0, .7);
-}
-
-.layer h3{
-    width: 100%;
-    font-weight: 500;
-    color: #fff;
-    font-size: 27px;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.layer:hover h3{
-    bottom: 49%;
-    opacity: 1;
-} */
 
 .textbook-subblock-1-4{
     display: grid;
@@ -215,7 +180,7 @@ input[type=text]:focus {
 }
 
 .textbook-subblocks-individual {
-    background: lightblue;
+    background: var(--secondary-supplement-color);
     position: relative;
     padding: 4%;
 }
@@ -296,7 +261,7 @@ input[type=text]:focus {
     padding: 3%;
     padding-top: 10%;
     padding-bottom: 10%;
-    background: lightgreen;
+    background: var(--secondary-supplement-color);
     margin-top: 20px;
     width: 200px;
     left: 55%;
@@ -378,7 +343,7 @@ input[type=text]:focus {
     padding: 30%;
     padding-top: 10%;
     padding-bottom: 20%;
-    background: lightgreen;
+    background: var(--secondary-supplement-color);
     width: 297px;
 }
 
@@ -422,12 +387,6 @@ input[type=text]:focus {
     line-height: 1.7em;
     color: #555555;
     background-color: white;
-
-    /* margin: auto;
-    width: 80%;
-    margin-top: 150px; */
-    /* border: 5px red solid; */
-    /* padding-top: 7rem; */
     padding: 5%;
     padding-left: 6%;
     padding-right: 6%;
@@ -504,6 +463,7 @@ input[type=text]:focus {
 
 .body-background{
     background-image: url("Images/final-background.png");
+    background-color: var(--primary-color);
     background-attachment: fixed;
     background-size: cover;
     /*
